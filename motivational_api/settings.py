@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d%j!r8)^rgdv1m-cdz!(*bck_-br^8+$r538!phry59_qo8!61
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['motivational-api-2kzjz.ondigitalocean.app', 'localhost', 'ondigitalocean.app']
+ALLOWED_HOSTS = ['motivational-api-2kzjz.ondigitalocean.app', 'localhost', 'ondigitalocean.app', '127.0.0.1']
 
 
 # Application definition
@@ -124,8 +124,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 import os
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'static')
+]
+STATIC_ROOT=os.path.join(BASE_DIR,'assests') 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
