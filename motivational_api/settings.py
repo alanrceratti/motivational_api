@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d%j!r8)^rgdv1m-cdz!(*bck_-br^8+$r538!phry59_qo8!61'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://motivational-api-2kzjz.ondigitalocean.app', 'localhost']
 
 
 # Application definition
