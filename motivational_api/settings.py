@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['motivational-api-2kzjz.ondigitalocean.app', 'localhost', 'ondigitalocean.app', '127.0.0.1']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
