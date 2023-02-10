@@ -6,7 +6,7 @@ from .models import Category, Phrases
 class PhrasesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Phrases
-        fields = ('id', 'category_name', 'phrase', 'image', 'image_url')
+        fields = ('id', 'category_name', 'phrase', 'image_url')
 
 
 class CategorySerializer(serializers.ModelSerializer):
